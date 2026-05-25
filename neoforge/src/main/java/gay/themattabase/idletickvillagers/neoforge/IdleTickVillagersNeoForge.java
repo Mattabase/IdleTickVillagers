@@ -3,7 +3,6 @@ package gay.themattabase.idletickvillagers.neoforge;
 import gay.themattabase.idletickvillagers.IdleTickVillagers;
 import gay.themattabase.idletickvillagers.IdleTickVillagersCommand;
 import gay.themattabase.idletickvillagers.IdleTickVillagersGameRules;
-import gay.themattabase.idletickvillagers.client.IdleTickVillagersConfigScreen;
 import gay.themattabase.idletickvillagers.config.IdleTickVillagersConfig;
 import gay.themattabase.idletickvillagers.neoforge.datagen.DataGenHandler;
 import net.minecraft.core.registries.Registries;
@@ -13,7 +12,6 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.loading.FMLLoader;
 import net.neoforged.fml.loading.FMLPaths;
-import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -61,8 +59,7 @@ public class IdleTickVillagersNeoForge {
                 event -> IdleTickVillagersCommand.register(event.getDispatcher()));
 
         if (FMLLoader.getCurrent().getDist().isClient()) {
-            container.registerExtensionPoint(IConfigScreenFactory.class,
-                    (mc, parent) -> new IdleTickVillagersConfigScreen(parent));
+            ClientSetup.init(container);
         }
     }
 }

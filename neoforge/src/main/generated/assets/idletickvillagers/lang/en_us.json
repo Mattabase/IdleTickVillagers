@@ -1,5 +1,4 @@
 {
-  "gamerule.idletickvillagers.aggressive_brain_throttle": "Also throttle sensors (more savings, may delay iron farm detection)",
   "gamerule.idletickvillagers.brain_throttle": "Throttle villager brain behaviour ticks",
   "gamerule.idletickvillagers.brain_throttle_interval": "Brain behaviour throttle interval (ticks)",
   "gamerule.idletickvillagers.dont_skip_if_hurt_marked": "Never throttle hurt-marked villagers",
@@ -10,10 +9,6 @@
   "gamerule.idletickvillagers.enabled": "Enable IdleTick villager optimisations",
   "gamerule.idletickvillagers.full_tick_skip": "Skip entire villager tick (extreme)",
   "gamerule.idletickvillagers.full_tick_skip_interval": "Full tick skip interval (ticks)",
-  "idletickvillagers.command.glow.off": "Debug glow disabled.",
-  "idletickvillagers.command.glow.on": "Debug glow enabled — confined villagers will glow.",
-  "idletickvillagers.config.aggressive_brain_throttle": "Aggressive Brain Throttle",
-  "idletickvillagers.config.aggressive_brain_throttle.tooltip": "Also throttle sensors on idle ticks. Saves more performance but may delay first zombie detection in iron farms.",
   "idletickvillagers.config.brain_throttle_enabled": "Brain Throttle",
   "idletickvillagers.config.brain_throttle_enabled.tooltip": "Throttle villager brain behaviour ticks while keeping sensors active. Safe for farms.",
   "idletickvillagers.config.brain_throttle_interval": "Brain Throttle Interval",
