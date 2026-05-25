@@ -53,6 +53,14 @@ public final class IdleTickVillagers {
         contribute("idletickvillagers.config.dont_skip_if_hurt_marked.tooltip",
                 "Never throttle villagers flagged for knockback/damage sync.");
 
+        // Confinement detection
+        contribute("idletickvillagers.config.confinement_required", "Confinement Required");
+        contribute("idletickvillagers.config.confinement_required.tooltip",
+                "Only throttle villagers detected as confined. Free-roaming villagers tick normally.");
+        contribute("idletickvillagers.config.confinement_threshold", "Confinement Threshold");
+        contribute("idletickvillagers.config.confinement_threshold.tooltip",
+                "Pathfinding failure score needed to consider a villager confined (1–50).");
+
         // ── Game rule descriptions ─────────────────────────────────
         contribute("gamerule.idletickvillagers.enabled", "Enable IdleTick villager optimisations");
         contribute("gamerule.idletickvillagers.brain_throttle", "Throttle villager brain behaviour ticks");
@@ -64,6 +72,8 @@ public final class IdleTickVillagers {
         contribute("gamerule.idletickvillagers.dont_skip_if_moving", "Never throttle moving villagers");
         contribute("gamerule.idletickvillagers.dont_skip_if_on_fire", "Never throttle burning villagers");
         contribute("gamerule.idletickvillagers.dont_skip_if_hurt_marked", "Never throttle hurt-marked villagers");
+        contribute("gamerule.idletickvillagers.confinement_required", "Require confinement before throttling");
+        contribute("gamerule.idletickvillagers.confinement_threshold", "Confinement pathfinding failure threshold");
     }
 
     private static void contribute(String key, String english) {
