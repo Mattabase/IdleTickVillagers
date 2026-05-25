@@ -1,0 +1,37 @@
+{
+    "schemaVersion": 1,
+    "id": "${mod_id}",
+    "version": "${version}",
+    "name": "${mod_name}",
+    "description": "${description}",
+    "authors": [
+        "${mod_author}"
+    ],
+    "contact": {},
+    "license": "${license}",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "gay.themattabase.idletickvillagers.fabric.IdleTickVillagersFabric"
+        ],
+        "modmenu": [
+            "gay.themattabase.idletickvillagers.fabric.ModMenuCompat"
+        ],
+        "fabric-datagen": [
+            "gay.themattabase.idletickvillagers.fabric.datagen.DataGenEntrypoint"
+        ]
+    },
+    "mixins": [
+        "idletickvillagers.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=${fabric_loader_version}",
+        "minecraft": "${minecraft_version}",
+        "java": ">=${java_version}",
+        "fabric-api": "*",
+        "polylib": ">=2.0.6"
+    },
+    "suggests": {
+        "modmenu": "*"
+    }
+}

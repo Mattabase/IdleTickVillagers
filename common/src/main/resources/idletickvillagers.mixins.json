@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "gay.themattabase.idletickvillagers.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "PathNavigationMixin",
+    "VillagerBrainThrottleMixin",
+    "VillagerFullTickMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
